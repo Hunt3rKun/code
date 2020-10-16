@@ -87,7 +87,7 @@ class GenerateRandomTestData:
         '''
         return self.f.md5()
 
-f =GenerateRandomTestData
+f =GenerateRandomTestData()
 x =GenerateRandomTestData
 print(x.random_name(f))
 
