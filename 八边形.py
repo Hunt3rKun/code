@@ -1,0 +1,16 @@
+from turtle import*
+setup(800,800)
+penup()
+left(90)
+fd(350)
+left(90)
+fd(200)
+pencolor('pink')
+pensize(25)
+pendown()
+fd(-250)
+left(135)
+for i in range(7):
+    fd(250)
+    right(45)
+done()
