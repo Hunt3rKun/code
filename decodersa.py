@@ -20,7 +20,7 @@ encrypt.close()
 
 encrypt = open('encrypt','rb+').read()      # 以二进制模式追加读取文件
 # encrypt : b'f[TCSjy\x1d\x1d!34m3UU\xda\xbf6mU!4\xaf\xbas\x1dm\xac4UB\xbf3\xba\x1d\xaf\x1d\xb1'
-# 将二进制转换成ASCII码
+# 将二进制转换成ASCI码
 for item in encrypt:
     print(item,end=' ')     # 102 91 84 67 83 106 121 29 29 33 51 52 109 51 85 85 218 191 54 109 85 33 52 175 186 115 29 109 172 52 85 66 191 51 186 29 175 29 177
 # 对每一项进行解密，得到相应字符的ASCII码
