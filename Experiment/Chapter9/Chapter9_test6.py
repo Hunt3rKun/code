@@ -1,0 +1,11 @@
+fp1, fp2 = open('test.txt', 'r'), open('test2.txt', 'r')
+fp1_str, fp2_str = fp1.read(), fp2.read()
+fp1.close()
+fp2.close()
+
+fp = open('t.txt', 'w')
+fp_str = list(fp1_str + fp2_str)
+fp_str.sort()
+fp_str = ''.join(fp_str)
+fp.write(fp_str)
+fp.close()
